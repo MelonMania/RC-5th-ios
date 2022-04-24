@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop UpVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="popUpView" modalTransitionStyle="crossDissolve" id="Y6W-OH-hqX" customClass="PopUpVC" customModule="starbucks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="팝업" translatesAutoresizingMaskIntoConstraints="NO" id="nrE-u4-uWY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvJ-cG-mGf">
+                                <rect key="frame" x="20" y="776" width="374" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="D8y-v0-biV"/>
+                                    <constraint firstAttribute="height" constant="39" id="UaM-Uf-eNh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="자세히보기" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <color key="baseBackgroundColor" red="0.2941176593" green="0.64705884459999996" blue="0.40784314269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="166" translatesAutoresizingMaskIntoConstraints="NO" id="WKM-gY-Dgx">
+                                <rect key="frame" x="11" y="831" width="373" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1L9-aM-9xX">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="OEk-6p-g6R"/>
+                                            <constraint firstAttribute="width" constant="141" id="dTy-SU-Hwd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="다시보지 않기">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="foreverClose:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eVE-ug-c5F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70E-XO-Uvh">
+                                        <rect key="frame" x="307" y="0.0" width="66" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="FB0-Lu-vUk"/>
+                                            <constraint firstAttribute="height" constant="31" id="P5n-Ia-ALc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="X  닫기">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="close:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="izg-XN-BXU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pvJ-cG-mGf" firstAttribute="top" secondItem="nrE-u4-uWY" secondAttribute="bottom" constant="16" id="1Hh-Kl-woG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nrE-u4-uWY" secondAttribute="trailing" id="GqZ-Ao-LlA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WKM-gY-Dgx" secondAttribute="bottom" id="Wla-dF-VUF"/>
+                            <constraint firstItem="WKM-gY-Dgx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="11" id="XYS-6h-w7A"/>
+                            <constraint firstItem="nrE-u4-uWY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Yck-DF-u7d"/>
+                            <constraint firstItem="nrE-u4-uWY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="YzY-Jv-jaN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nrE-u4-uWY" secondAttribute="bottom" constant="102" id="gkj-qo-m0l"/>
+                            <constraint firstItem="pvJ-cG-mGf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iNa-uG-SYB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pvJ-cG-mGf" secondAttribute="trailing" constant="20" id="rNP-8o-rl3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="팝업" width="688" height="1184"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

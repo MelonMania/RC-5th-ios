@@ -18,6 +18,7 @@ class HomeVC: UIViewController {
     let MinTopHeight : CGFloat = 30 + UIApplication.shared.statusBarFrame.height
     
     let eventImage : [String] = ["What'New1","What'New2","What'New3","What'New4","What'New5","What'New6"]
+    let popUpBoard = UIStoryboard(name: "PopUpView", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,13 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if  UserDefaults.standard.bool(forKey: "pop") == true {
+            guard let popUpView = popUpBoard.instantiateViewController(withIdentifier: "popUpView") as? PopUpVC else { return }
+            popUpView.modalPresentationStyle = .fullScreen
+            self.present(popUpView, animated: false)
+        }
+    }
     
     func setCardShadow() {
         self.userCardView.layer.shadowColor = UIColor.black.cgColor
@@ -47,17 +55,14 @@ extension HomeVC : UIScrollViewDelegate {
         // *** 변경될 높이가 최댓값을 초과함
         if(ModifiedTopHeight > MaxTopHeight)
         {
-            //현재 최상단뷰의 높이를 최댓값(250)으로 설정
             viewTopHeight.constant = MaxTopHeight
-        }// *** 변경될 높이가 최솟값 미만임
+        }
         else if(ModifiedTopHeight < MinTopHeight)
         {
-            //현재 최상단뷰의 높이를 최솟값(50+상태바높이)으로 설정
             viewTopHeight.constant = MinTopHeight
-        }// *** 변경될 높이가 최솟값(50+상태바높이)과 최댓값(250) 사이임
+        }
         else
         {
-            //현재 최상단 뷰 높이를 변경함
             viewTopHeight.constant = ModifiedTopHeight
             scrollView.contentOffset.y = 0
         }
@@ -66,7 +71,7 @@ extension HomeVC : UIScrollViewDelegate {
 
 extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return eventImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -78,6 +83,5 @@ extension HomeVC : UICollectionViewDelegate, UICollectionViewDataSource {
         cell.buttonView.imageView?.image = UIImage(named: eventImage[indexPath.row])
         return cell
     }
-    
     
 }

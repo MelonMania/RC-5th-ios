@@ -8,23 +8,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="payView" id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1G9-QW-2Fa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Pay" id="Sci-hb-H0m"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="카드등록" translatesAutoresizingMaskIntoConstraints="NO" id="wSs-cw-G1F">
+                                <rect key="frame" x="20" y="107" width="374" height="620"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="620" id="XI6-Ja-hM9"/>
+                                    <constraint firstAttribute="width" constant="374" id="e0D-Tn-xZc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wSs-cw-G1F" secondAttribute="trailing" constant="20" id="FUT-Q8-2Rm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wSs-cw-G1F" secondAttribute="bottom" constant="86" id="apA-ly-s3n"/>
+                            <constraint firstItem="wSs-cw-G1F" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="quq-47-jTL"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pay" image="creditcard" catalog="system" id="Bf1-MJ-CGV"/>
+                    <navigationItem key="navigationItem" title="Title" id="dF9-LH-N6I"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="91"/>
+            <point key="canvasLocation" x="-20" y="92"/>
         </scene>
     </scenes>
     <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="카드등록" width="524" height="704"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

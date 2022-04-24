@@ -10,6 +10,16 @@
 		171ED32128115DD5006335B3 /* eventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ED32028115DD5006335B3 /* eventCollectionViewCell.swift */; };
 		171ED32328115EEF006335B3 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171ED32228115EEF006335B3 /* EventModel.swift */; };
 		171ED32528116741006335B3 /* PayView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171ED32428116741006335B3 /* PayView.storyboard */; };
+		172B661A2812764300386FA8 /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B66192812764300386FA8 /* OrderVC.swift */; };
+		172B661C2812E9BF00386FA8 /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B661B2812E9BF00386FA8 /* categoryCollectionViewCell.swift */; };
+		172B661E2812EADE00386FA8 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172B661D2812EADE00386FA8 /* HomeView.storyboard */; };
+		172B66202812F44200386FA8 /* RecommendView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172B661F2812F44200386FA8 /* RecommendView.storyboard */; };
+		172B66222813033700386FA8 /* OrderToRecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B66212813033700386FA8 /* OrderToRecommendVC.swift */; };
+		17AFA36C281366F00035D364 /* menuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFA36B281366F00035D364 /* menuCollectionViewCell.swift */; };
+		17AFA36E28136C920035D364 /* SelectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AFA36D28136C920035D364 /* SelectView.storyboard */; };
+		17AFA370281371520035D364 /* PopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AFA36F281371520035D364 /* PopUpView.storyboard */; };
+		17AFA372281374D50035D364 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFA371281374D40035D364 /* PopUpVC.swift */; };
+		17AFA37428137B700035D364 /* menuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AFA37328137B700035D364 /* menuView.storyboard */; };
 		17B1698728100EDA00BF9D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1698628100EDA00BF9D0D /* AppDelegate.swift */; };
 		17B1698928100EDA00BF9D0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1698828100EDA00BF9D0D /* SceneDelegate.swift */; };
 		17B1698B28100EDA00BF9D0D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B1698A28100EDA00BF9D0D /* HomeVC.swift */; };
@@ -23,6 +33,16 @@
 		171ED32028115DD5006335B3 /* eventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventCollectionViewCell.swift; sourceTree = "<group>"; };
 		171ED32228115EEF006335B3 /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		171ED32428116741006335B3 /* PayView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayView.storyboard; sourceTree = "<group>"; };
+		172B66192812764300386FA8 /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderVC.swift; path = starbucks/View/OrderVC.swift; sourceTree = SOURCE_ROOT; };
+		172B661B2812E9BF00386FA8 /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = categoryCollectionViewCell.swift; path = starbucks/Cell/categoryCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		172B661D2812EADE00386FA8 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
+		172B661F2812F44200386FA8 /* RecommendView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecommendView.storyboard; sourceTree = "<group>"; };
+		172B66212813033700386FA8 /* OrderToRecommendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderToRecommendVC.swift; path = starbucks/View/OrderToRecommendVC.swift; sourceTree = SOURCE_ROOT; };
+		17AFA36B281366F00035D364 /* menuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = menuCollectionViewCell.swift; path = starbucks/Cell/menuCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		17AFA36D28136C920035D364 /* SelectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectView.storyboard; sourceTree = "<group>"; };
+		17AFA36F281371520035D364 /* PopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpView.storyboard; sourceTree = "<group>"; };
+		17AFA371281374D40035D364 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpVC.swift; path = starbucks/View/PopUpVC.swift; sourceTree = SOURCE_ROOT; };
+		17AFA37328137B700035D364 /* menuView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = menuView.storyboard; sourceTree = "<group>"; };
 		17B1698328100EDA00BF9D0D /* starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B1698628100EDA00BF9D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B1698828100EDA00BF9D0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +70,12 @@
 			children = (
 				171ED32428116741006335B3 /* PayView.storyboard */,
 				17B1698C28100EDA00BF9D0D /* Main.storyboard */,
+				17AFA36F281371520035D364 /* PopUpView.storyboard */,
+				172B661D2812EADE00386FA8 /* HomeView.storyboard */,
 				17FC31C628116C74006A32AB /* OrderView.storyboard */,
+				172B661F2812F44200386FA8 /* RecommendView.storyboard */,
+				17AFA36D28136C920035D364 /* SelectView.storyboard */,
+				17AFA37328137B700035D364 /* menuView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -58,6 +83,9 @@
 		171ED32728116B5E006335B3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				17AFA371281374D40035D364 /* PopUpVC.swift */,
+				172B66212813033700386FA8 /* OrderToRecommendVC.swift */,
+				172B66192812764300386FA8 /* OrderVC.swift */,
 				17B1698A28100EDA00BF9D0D /* HomeVC.swift */,
 			);
 			path = Controller;
@@ -66,6 +94,8 @@
 		171ED32828116B7F006335B3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				17AFA36B281366F00035D364 /* menuCollectionViewCell.swift */,
+				172B661B2812E9BF00386FA8 /* categoryCollectionViewCell.swift */,
 				171ED32028115DD5006335B3 /* eventCollectionViewCell.swift */,
 			);
 			path = Cell;
@@ -169,11 +199,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AFA37428137B700035D364 /* menuView.storyboard in Resources */,
+				172B661E2812EADE00386FA8 /* HomeView.storyboard in Resources */,
 				171ED32528116741006335B3 /* PayView.storyboard in Resources */,
 				17B1699328100EDC00BF9D0D /* LaunchScreen.storyboard in Resources */,
+				17AFA370281371520035D364 /* PopUpView.storyboard in Resources */,
 				17B1699028100EDC00BF9D0D /* Assets.xcassets in Resources */,
 				17FC31C728116C74006A32AB /* OrderView.storyboard in Resources */,
 				17B1698E28100EDA00BF9D0D /* Main.storyboard in Resources */,
+				172B66202812F44200386FA8 /* RecommendView.storyboard in Resources */,
+				17AFA36E28136C920035D364 /* SelectView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				171ED32328115EEF006335B3 /* EventModel.swift in Sources */,
+				172B661A2812764300386FA8 /* OrderVC.swift in Sources */,
 				17B1698B28100EDA00BF9D0D /* HomeVC.swift in Sources */,
 				171ED32128115DD5006335B3 /* eventCollectionViewCell.swift in Sources */,
 				17B1698728100EDA00BF9D0D /* AppDelegate.swift in Sources */,
+				17AFA36C281366F00035D364 /* menuCollectionViewCell.swift in Sources */,
+				172B66222813033700386FA8 /* OrderToRecommendVC.swift in Sources */,
+				17AFA372281374D50035D364 /* PopUpVC.swift in Sources */,
+				172B661C2812E9BF00386FA8 /* categoryCollectionViewCell.swift in Sources */,
 				17B1698928100EDA00BF9D0D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var imageView : UIImageView?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -27,13 +27,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        if let imageView = imageView {
+            imageView.removeFromSuperview()
+        }
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+        guard let window = window else {
+              return
+            }
+            imageView = UIImageView(frame: window.frame)
+            imageView?.image = UIImage(named: "switcher")
+            window.addSubview(imageView!)
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
