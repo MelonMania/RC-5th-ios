@@ -1,0 +1,16 @@
+PODS:
+  - Hover (2.1.0)
+
+DEPENDENCIES:
+  - Hover
+
+SPEC REPOS:
+  trunk:
+    - Hover
+
+SPEC CHECKSUMS:
+  Hover: b7821338bdaf54d0e46be24d603e443a869993e3
+
+PODFILE CHECKSUM: 3edaf4ba62aef67161122647a4529691f4ea6fd4
+
+COCOAPODS: 1.11.3
