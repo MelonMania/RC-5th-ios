@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bannerCell" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="CGV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AAR-hi-Mx2">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="118"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="118" id="CW7-HR-iGt"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="AAR-hi-Mx2" secondAttribute="trailing" id="4DE-94-bkA"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="AAR-hi-Mx2" secondAttribute="bottom" id="4DJ-QH-6K8"/>
+                <constraint firstItem="AAR-hi-Mx2" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="6FM-gw-Jil"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="AAR-hi-Mx2" secondAttribute="top" constant="44" id="l68-UB-nyl"/>
+            </constraints>
+            <size key="customSize" width="414" height="118"/>
+            <connections>
+                <outlet property="bannerImage" destination="AAR-hi-Mx2" id="UMQ-4h-AKo"/>
+            </connections>
+            <point key="canvasLocation" x="282.60869565217394" y="78.348214285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

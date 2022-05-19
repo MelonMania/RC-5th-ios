@@ -13,7 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        /*let attrs = [
+            NSAttributedString.Key.font : UIFont(name: "Futura-Bold", size: 17)!
+        ]
+        UINavigationBar.appearance().titleTextAttributes = attrs*/
+        
         return true
     }
 

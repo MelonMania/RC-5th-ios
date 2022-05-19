@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Chart View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MovieChartVC" id="Y6W-OH-hqX" customClass="MovieChartViewController" customModule="CGV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EK-8d-EUu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="311"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="311" id="Nq2-q4-7A5"/>
+                                    <constraint firstAttribute="width" constant="414" id="ai5-gh-kMB"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Jxy-Ds-GZQ" kind="embed" id="pwy-mX-fRK"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0EK-8d-EUu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="83f-so-0DJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0EK-8d-EUu" secondAttribute="bottom" id="hOr-k5-1Uw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0EK-8d-EUu" secondAttribute="trailing" id="tOL-Xx-nrO"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="355"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="80.691964285714278"/>
+        </scene>
+        <!--Moview Detail View Controller-->
+        <scene sceneID="5Km-BR-sA3">
+            <objects>
+                <viewController id="Jxy-Ds-GZQ" customClass="MoviewDetailViewController" customModule="CGV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qPs-Xm-AAf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="311"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEs-jl-B7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

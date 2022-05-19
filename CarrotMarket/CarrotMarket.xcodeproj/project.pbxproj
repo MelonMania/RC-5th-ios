@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174D8D9E281C71240049829C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8D9D281C71230049829C /* Product.swift */; };
+		174D8DA0281C743C0049829C /* ProductView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8D9F281C743C0049829C /* ProductView.storyboard */; };
+		174D8DA2281C79900049829C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8DA1281C79900049829C /* ProductViewController.swift */; };
+		174D8DA5281C9B6B0049829C /* userOtherProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8DA3281C9B6B0049829C /* userOtherProductCollectionCell.swift */; };
+		174D8DA6281C9B6B0049829C /* userOtherProductCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DA4281C9B6B0049829C /* userOtherProductCollectionCell.xib */; };
+		174D8DA8281C9DBE0049829C /* OtherProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8DA7281C9DBE0049829C /* OtherProduct.swift */; };
+		174D8DAC281CA3BC0049829C /* otherProductReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8DAB281CA3BC0049829C /* otherProductReusableView.swift */; };
+		174D8DAE281CA7E30049829C /* NearbyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DAD281CA7E30049829C /* NearbyView.storyboard */; };
+		174D8DB0281CA7F30049829C /* TownLifeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DAF281CA7F30049829C /* TownLifeView.storyboard */; };
+		174D8DB2281CA8000049829C /* ChattingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DB1281CA8000049829C /* ChattingView.storyboard */; };
+		174D8DB4281CA8210049829C /* MyInfoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DB3281CA8210049829C /* MyInfoView.storyboard */; };
+		174D8DB6281CAB550049829C /* AddProductView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DB5281CAB540049829C /* AddProductView.storyboard */; };
+		174D8DB8281CAF8C0049829C /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8DB7281CAF8C0049829C /* AddProductViewController.swift */; };
+		174D8DBA281CB6EF0049829C /* LocationSelectView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174D8DB9281CB6EF0049829C /* LocationSelectView.storyboard */; };
+		174D8DBC281CB73E0049829C /* LocationSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D8DBB281CB73E0049829C /* LocationSelectViewController.swift */; };
 		1764F6D32816954E001A37E8 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764F6D12816954E001A37E8 /* HomeTableViewCell.swift */; };
 		1764F6D42816954E001A37E8 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1764F6D22816954E001A37E8 /* HomeTableViewCell.xib */; };
 		176BDBDF28167B6600F7EA40 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176BDBDE28167B6600F7EA40 /* HomeView.storyboard */; };
@@ -20,6 +35,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174D8D9D281C71230049829C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		174D8D9F281C743C0049829C /* ProductView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductView.storyboard; sourceTree = "<group>"; };
+		174D8DA1281C79900049829C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		174D8DA3281C9B6B0049829C /* userOtherProductCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userOtherProductCollectionCell.swift; sourceTree = "<group>"; };
+		174D8DA4281C9B6B0049829C /* userOtherProductCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userOtherProductCollectionCell.xib; sourceTree = "<group>"; };
+		174D8DA7281C9DBE0049829C /* OtherProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProduct.swift; sourceTree = "<group>"; };
+		174D8DAB281CA3BC0049829C /* otherProductReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otherProductReusableView.swift; sourceTree = "<group>"; };
+		174D8DAD281CA7E30049829C /* NearbyView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NearbyView.storyboard; sourceTree = "<group>"; };
+		174D8DAF281CA7F30049829C /* TownLifeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TownLifeView.storyboard; sourceTree = "<group>"; };
+		174D8DB1281CA8000049829C /* ChattingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChattingView.storyboard; sourceTree = "<group>"; };
+		174D8DB3281CA8210049829C /* MyInfoView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyInfoView.storyboard; sourceTree = "<group>"; };
+		174D8DB5281CAB540049829C /* AddProductView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddProductView.storyboard; sourceTree = "<group>"; };
+		174D8DB7281CAF8C0049829C /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddProductViewController.swift; path = CarrotMarket/View/AddProductViewController.swift; sourceTree = SOURCE_ROOT; };
+		174D8DB9281CB6EF0049829C /* LocationSelectView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationSelectView.storyboard; sourceTree = "<group>"; };
+		174D8DBB281CB73E0049829C /* LocationSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectViewController.swift; sourceTree = "<group>"; };
 		1764F6D12816954E001A37E8 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		1764F6D22816954E001A37E8 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		176BDBDE28167B6600F7EA40 /* HomeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
@@ -48,9 +78,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174D8D9A281BC9D00049829C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				174D8D9D281C71230049829C /* Product.swift */,
+				174D8DA7281C9DBE0049829C /* OtherProduct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		174D8D9B281BC9EA0049829C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1764F6D12816954E001A37E8 /* HomeTableViewCell.swift */,
+				1764F6D22816954E001A37E8 /* HomeTableViewCell.xib */,
+				174D8DA3281C9B6B0049829C /* userOtherProductCollectionCell.swift */,
+				174D8DA4281C9B6B0049829C /* userOtherProductCollectionCell.xib */,
+				174D8DAB281CA3BC0049829C /* otherProductReusableView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		174D8D9C281BCAD90049829C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				174D8DB7281CAF8C0049829C /* AddProductViewController.swift */,
+				176BDBE128167C0200F7EA40 /* HomeViewController.swift */,
+				174D8DBB281CB73E0049829C /* LocationSelectViewController.swift */,
+				174D8DA1281C79900049829C /* ProductViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		176BDBE028167B7300F7EA40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				174D8D9B281BC9EA0049829C /* Cell */,
+				17BE26E328156AA200960A90 /* Main.storyboard */,
+				176BDBDE28167B6600F7EA40 /* HomeView.storyboard */,
+				174D8D9F281C743C0049829C /* ProductView.storyboard */,
+				174D8DAD281CA7E30049829C /* NearbyView.storyboard */,
+				174D8DB5281CAB540049829C /* AddProductView.storyboard */,
+				174D8DAF281CA7F30049829C /* TownLifeView.storyboard */,
+				174D8DB1281CA8000049829C /* ChattingView.storyboard */,
+				174D8DB3281CA8210049829C /* MyInfoView.storyboard */,
+				174D8DB9281CB6EF0049829C /* LocationSelectView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -76,13 +148,10 @@
 		17BE26DC28156AA200960A90 /* CarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
+				174D8D9A281BC9D00049829C /* Model */,
 				176BDBE028167B7300F7EA40 /* View */,
+				174D8D9C281BCAD90049829C /* Controller */,
 				17BE26F128156AB400960A90 /* Resource */,
-				176BDBE128167C0200F7EA40 /* HomeViewController.swift */,
-				17BE26E328156AA200960A90 /* Main.storyboard */,
-				176BDBDE28167B6600F7EA40 /* HomeView.storyboard */,
-				1764F6D12816954E001A37E8 /* HomeTableViewCell.swift */,
-				1764F6D22816954E001A37E8 /* HomeTableViewCell.xib */,
 				17BE26E628156AA300960A90 /* Assets.xcassets */,
 				17BE26E828156AA300960A90 /* LaunchScreen.storyboard */,
 				17BE26EB28156AA300960A90 /* Info.plist */,
@@ -105,7 +174,6 @@
 				CD472F9AF0DAB3CA38238D3C /* Pods-CarrotMarket.debug.xcconfig */,
 				A327C42643B2041D62C03B2C /* Pods-CarrotMarket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,11 +245,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174D8DAE281CA7E30049829C /* NearbyView.storyboard in Resources */,
+				174D8DBA281CB6EF0049829C /* LocationSelectView.storyboard in Resources */,
+				174D8DB4281CA8210049829C /* MyInfoView.storyboard in Resources */,
+				174D8DB2281CA8000049829C /* ChattingView.storyboard in Resources */,
+				174D8DB0281CA7F30049829C /* TownLifeView.storyboard in Resources */,
 				17BE26EA28156AA300960A90 /* LaunchScreen.storyboard in Resources */,
+				174D8DA6281C9B6B0049829C /* userOtherProductCollectionCell.xib in Resources */,
 				17BE26E728156AA300960A90 /* Assets.xcassets in Resources */,
 				176BDBDF28167B6600F7EA40 /* HomeView.storyboard in Resources */,
 				1764F6D42816954E001A37E8 /* HomeTableViewCell.xib in Resources */,
+				174D8DB6281CAB550049829C /* AddProductView.storyboard in Resources */,
 				17BE26E528156AA200960A90 /* Main.storyboard in Resources */,
+				174D8DA0281C743C0049829C /* ProductView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174D8DA8281C9DBE0049829C /* OtherProduct.swift in Sources */,
+				174D8DA2281C79900049829C /* ProductViewController.swift in Sources */,
+				174D8DB8281CAF8C0049829C /* AddProductViewController.swift in Sources */,
+				174D8DA5281C9B6B0049829C /* userOtherProductCollectionCell.swift in Sources */,
 				17BE26DE28156AA200960A90 /* AppDelegate.swift in Sources */,
+				174D8DBC281CB73E0049829C /* LocationSelectViewController.swift in Sources */,
+				174D8DAC281CA3BC0049829C /* otherProductReusableView.swift in Sources */,
 				17BE26E028156AA200960A90 /* SceneDelegate.swift in Sources */,
+				174D8D9E281C71240049829C /* Product.swift in Sources */,
 				1764F6D32816954E001A37E8 /* HomeTableViewCell.swift in Sources */,
 				176BDBE228167C0200F7EA40 /* HomeViewController.swift in Sources */,
 			);
